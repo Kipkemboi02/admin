@@ -1,0 +1,66 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centers text inside the card */
+    padding: 20px;
+}
+
+.card-body a {
+    margin-top: 10px; /* Add spacing between elements */
+}
+
+
+.card-body a {
+    display: block;
+    text-align: center;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .card-body a {
+        margin-top: 10px;
+    }
+
+    .dashboard {
+        margin: 20px auto;
+    }
+}
+@media (max-width: 768px) {
+    .card-body {
+        align-items: center;
+    }
+
+    .card-body a {
+        margin-top: 10px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Initial visibility of lists */
+#teacherList, #studentList {
+    display: none;
+}

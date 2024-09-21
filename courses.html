@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Manage Courses</h2>
+
+        <!-- Add New Cohort -->
+        <div class="mb-4">
+            <h4>Add New Cohort</h4>
+            <form id="cohortForm">
+                <div class="form-group">
+                    <label for="cohortName">Cohort Name</label>
+                    <input type="text" id="cohortName" class="form-control" placeholder="Enter cohort name" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Cohort</button>
+            </form>
+        </div>
+
+        <!-- Add Courses to a Cohort -->
+        <div class="mb-4">
+            <h4>Add Courses to Cohort</h4>
+            <form id="courseForm">
+                <div class="form-group">
+                    <label for="cohortSelect">Select Cohort</label>
+                    <select id="cohortSelect" class="form-control" required>
+                        <!-- Cohort options will be added dynamically -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="courseName">Course Name</label>
+                    <input type="text" id="courseName" class="form-control" placeholder="Enter course name" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Course</button>
+            </form>
+        </div>
+
+        <!-- Display Cohorts and Courses -->
+        <h4>Courses by Cohort</h4>
+        <div id="cohortCourses">
+            <!-- Cohort and course lists will be added here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

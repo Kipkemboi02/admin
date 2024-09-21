@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Manage Users</h2>
+
+        <div class="row">
+            <!-- Teachers -->
+            <div class="col-md-6">
+                <h4>Teachers</h4>
+                <button id="manageTeachersBtn" class="btn btn-primary mb-3">Manage Teachers</button>
+                <table id="teacherTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="teacherList">
+                        <!-- Teacher rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Students -->
+            <div class="col-md-6">
+                <h4>Students</h4>
+                <button id="manageStudentsBtn" class="btn btn-primary mb-3">Manage Students</button>
+                <table id="studentTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList">
+                        <!-- Student rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

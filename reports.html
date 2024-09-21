@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">View Reports</h2>
+
+        <!-- Report Selection -->
+        <div class="mb-4">
+            <h4>Select Report Type</h4>
+            <form id="reportForm">
+                <div class="form-group">
+                    <label for="reportType">Report Type</label>
+                    <select id="reportType" class="form-control" required>
+                        <option value="userActivity">User Activity</option>
+                        <option value="courseEnrollment">Course Enrollment</option>
+                        <option value="performance">Performance</option>
+                        <option value="systemHealth">System Health</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+        </div>
+
+        <!-- Report Display -->
+        <div id="reportDisplay">
+            <!-- Report content will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="view-reports.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
